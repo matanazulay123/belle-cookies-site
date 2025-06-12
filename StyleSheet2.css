@@ -1,0 +1,286 @@
+﻿.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+.dropdown3 {
+    float: left;
+    overflow: hidden;
+}
+.dropdown2 {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown1 {
+    float: left;
+    overflow: hidden;
+}
+.dropdown1 .dropbtn1 {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown2 .dropbtn2 {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown3 .dropbtn3 {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover  .dropdown1:hover .dropbtn1, .dropbtn1:focus {
+    background-color: #D1BDCF;
+}
+.navbar a:hover .dropdown2:hover .dropbtn2, .dropbtn2:focus {
+    background-color: #D1BDCF;
+}
+
+.navbar a:hover .dropdown3:hover .dropbtn3, .dropbtn3:focus {
+    background-color: #D1BDCF;
+}
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content1 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content2 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content3 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content1 a:hover {
+    background-color: #ddd;
+}
+.dropdown-content2 a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content3 a:hover {
+    background-color: #ddd;
+}
+.show1 {
+    display: block;
+}
+.show2 {
+    display: block;
+}
+
+.show3 {
+    display: block;
+}
+       
+.h {
+    font-family: Calibri;
+    font-size: 20px;
+    font-weight: bold;
+    color:#898EBF
+    
+}
+
+.p {
+    font-family: Calibri;
+    
+}
+
+
+.d {
+    background-color: #F6F6F6;
+    width: 400px;
+    position: relative;
+    left: 30px;
+    padding: 2px 15px;
+    border-radius: 4px 4px
+}
+.back-to-top {
+    position: fixed;
+    bottom: -40px;
+    right: 40px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #898EBF;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+    .back-to-top:focus {
+        color: #fff;
+    }
+
+    .back-to-top.show {
+        bottom: 40px;
+        right: 40px;
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+        .back-to-top.show:hover {
+            color: #fff;
+            bottom: 30px;
+            opacity: 1;
+        }
+
+.arrow {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    transform: rotate(-90deg);
+    top: 30%;
+    left: 40%;
+}
+
+    .arrow:nth-child(2) {
+        top: 42%;
+    }
+
+@keyframes bounce {
+    0% {
+        opacity: 1;
+        transform: rotate(-90deg) translateX(0px) scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: rotate(-90deg) translateX(10px) scale(0.9);
+    }
+
+    26% {
+        opacity: 0;
+        transform: rotate(-90deg) translateX(-10px) scale(0.9);
+    }
+
+    55% {
+        opacity: 1;
+        transform: rotate(-90deg) translateX(0px) scale(1);
+    }
+}
+
+.back-to-top:hover .arrow {
+    animation-name: bounce;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+    .back-to-top:hover .arrow:nth-child(2) {
+        animation-name: bounce;
+        animation-duration: 1.4s;
+        animation-delay: 0.2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+@media only screen and (max-width: 575px) {
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+        .back-to-top.show {
+            bottom: 10px;
+            right: 10px;
+        }
+
+            .back-to-top.show:hover {
+                bottom: 10px;
+            }
+
+    .arrow {
+        top: 27%;
+        left: 37%;
+    }
+}
+
+.h1{
+    font-family:Calibri;
+    position:relative;
+    left: 300px;
+    text-shadow:1px 1px lightgray;
+}

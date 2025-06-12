@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Belle's Cookies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="StyleSheet2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JavaScript1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <style>
+        /* Add some styling for the page */
+        .gradient-text {
+            background: linear-gradient(to right, #65a1f0, #7f6ff9,#3f2cd4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 48px;
+            
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Add a background image */
+        body::before {
+            content: "";
+            background-size: cover;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://thumbs.dreamstime.com/b/baking-background-bake-ingredients-banner-website-pastel-top-view-flat-lay-copy-space-preparation-kitchen-table-ware-109766956.jpg');background-repeat:no-repeat;background-attachment:fixed;background-size:100% 100%">
+
+    <canvas id="canvas" width="1100" height="100"></canvas>
+
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+
+        <div class="dropdown1">
+            <button class="dropbtn1" onclick="nav1()">
+                Cakes
+
+            </button>
+            <div class="dropdown-content1" id="myDropdown1">
+                <a href="Blueberry Cheesecake.html">Bluberry cheesecake</a>
+                <a href="Orange Cake.html">Orange Cake</a>
+                <a href="Chocolate Mousse Cake.html">Chocolate Mousse Cake</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button class="dropbtn2" onclick="nav2()">
+                Cookies
+
+            </button>
+            <div class="dropdown-content2" id="myDropdown2">
+                <a href="Chocolate Chip Cookies.html">Chocolate Chip Cookies</a>
+                <a href="Brownies.html">Brownies</a>
+                <a href="Macarons.html">Macarons</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button class="dropbtn3" onclick="nav3()">
+                Pies
+
+            </button>
+            <div class="dropdown-content3" id="myDropdown3">
+                <a href="Lemon merringue pie.html">Lemon Merringue Pie</a>
+                <a href="Apple pie.html">Apple Pie</a>
+                <a href="Pecan Pie.html">Pecan Pie</a>
+            </div>
+        </div>
+        <a href="AboutUs.html">About</a>
+        <a href="Contactus.html">Contact Us</a>
+    </div>
+    <br /> <br /> <br />
+    <h1 class="gradient-text" style="">About Us</h1>
+    <div class="container">
+        <p>Welcome to our recipe site! We are a team of passionate foodies and home cooks who have come together to share our love of cooking with the world. Our mission is to provide delicious and easy-to-follow recipes for people of all skill levels.</p>
+        <p>Our site features a wide variety of recipes, from classic comfort foods to exotic international dishes. We are constantly updating our site with new recipes, so be sure to check back often for inspiration.</p>
+        <p>In addition to our recipes, we also offer cooking tips and techniques, product reviews, and a community forum where users can share their own recipes and connect with other food enthusiasts.</p>
+        <p>Thank you for visiting our site and happy cooking!</p>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var btn = $('#backToTop');
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() > 300) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+            });
+            btn.on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, '300');
+            });
+        });
+    </script>
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        ctx.font = 'bold 75px Ariel ';
+        ctx.fillStyle = "#898EBF";
+        ctx.fillText("Belle's Cookies", 20, 75);
+    </script>
+
+
+
+
+</body>
+</html>

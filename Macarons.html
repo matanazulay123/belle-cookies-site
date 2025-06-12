@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet2.css" />
+    <script src="JavaScript1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type='text/javascript'
+            src='http://code.jquery.com/jquery-2.1.0.js'></script>
+    <style type='text/css'>
+        #panel, #flip {
+            padding: 5px;
+            background-color: #F6F6F6;
+            position: relative;
+            left: 100px;
+            background-color: #F6F6F6;
+            width: 450px;
+            padding: 2px 15px;
+            border-radius: 4px 4px
+        }
+
+        #panel {
+            padding: 15.5px;
+            display: none;
+        }
+        li { cursor: pointer;
+        }
+
+        .crossOut {
+            text-decoration: line-through;
+        }
+
+        .h {
+            font-family: Calibri;
+            font-size: 20px;
+            font-weight: bold;
+            color: #898EBF;
+        }
+
+        h1 {
+            font-family: Calibri;
+            position: relative;
+            left: 270px;
+            text-shadow: 1px 1px lightgray;
+            margin: 100px;
+            font-size:48px
+        }
+
+        img {
+            margin: 5px 5px 50px 200px;
+            border-radius: 3px 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="javascript:void(0);" id="backToTop" class="back-to-top">
+        <i class="arrow"></i><i class="arrow"></i>
+    </a>
+    <canvas id="canvas" width="1100" height="100"></canvas>
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+
+        <div class="dropdown1">
+            <button class="dropbtn1" onclick="nav1()">
+                Cakes
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content1" id="myDropdown1">
+                <a href="Blueberry Cheesecake.html">Bluberry cheesecake</a>
+                <a href="Orange Cake.html">Orange Cake</a>
+                <a href="Chocolate Mousse Cake.html">Chocolate Mousse Cake</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button class="dropbtn2" onclick="nav2()">
+                Cookies
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content2" id="myDropdown2">
+                <a href="Chocolate Chip Cookies.html">Chocolate Chip Cookies</a>
+                <a href="Brownies.html">Brownies</a>
+                <a href="Macarons.html">Macarons</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button class="dropbtn3" onclick="nav3()">
+                Pies
+                
+            </button>
+            <div class="dropdown-content3" id="myDropdown3">
+                <a href="Lemon merringue pie.html">Lemon Merringue Pie</a>
+                <a href="Apple pie.html">Apple Pie</a>
+                <a href="Pecan Pie.html">Pecan Pie</a>
+            </div>
+        </div>
+        <a href="AboutUs.html">About</a>
+        <a href="Contactus.html">Contact Us</a>
+    </div>
+
+    <h1>Macaron Recipe</h1>
+    <img src="m.jpg" />
+    <table>
+        <tr>
+            <td>
+                <div class="d">
+                    <h2 class="h" style="font-size:30px">Ingredients:</h2>
+                    <ul class="p">
+                        <li>100 g egg whites</li>
+                        <li>100 g granulated sugar</li>
+                        <li>100 g almond flour</li>
+                        <li>100 g powdered sugar</li>
+                        <li>Pinch salt</li>
+                        <li>Food coloring (optional)</li>
+                        <li>6 Tablespoons unsalted butter, room temperature</li>
+                        <li>2 cups powdered sugar</li>
+                        <li>4 large eggs</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>pinch of salt</li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <div id="flip">
+                    <h2 class="h" style="font-size:30px">Directions:</h2>
+                </div>
+                <div id="panel">
+                    <p class="h">Step 1</p>
+                    <p class="p">Preheat the oven to 150°C. Line two baking sheets with parchment paper. Set aside.</p>
+                    <p class="h">Step 2</p>
+                    <p class="p">
+                        Heat a small pot of water over medium-low heat until it steams.
+                        In the bowl of a stand mixer, combine egg whites and roughly 3 tablespoons of the granulated sugar.
+                        Place bowl over steaming pot, creating a double boiler.
+                    </p>
+                    <p class="h">Step 3</p>
+                    <p class="p">
+                        Whisk egg whites and sugar continuously until sugar melts completely and egg whites become white and frothy, about 1 minute.
+                        Remove from heat and place the bowl back onto the stand mixer.
+                    </p>
+                    <p class="h">Step 4</p>
+                    <p class="p">
+                        Fit stand mixer with whisk attachment and whisk on high speed while slowly adding in the remaining granulated sugar. Add the food coloring (if using).
+                        Continue to whisk for another 3-4 minutes, until stiff meringue peaks form. Congratulations, you just made a Swiss meringue!
+                    </p>
+                    <p class="h">Step 5</p>
+                    <p class="p">Next, sift together the almond flour, powdered sugar, and salt twice, then gently shake the mixture into the meringue bowl.</p>
+                    <p class="h">Step 6</p>
+                    <p class="p">
+                        Place the bowl back onto a stand mixer, still fitted with a whisk attachment.
+                        Turn the mixer to medium speed and whisk for 5 seconds (just enough to combine the almond flour mixture with the egg whites).
+                    </p>
+                   
+                    <p class="h">Step 7</p>
+                    <p class="p">
+                        Stop the mixer and use a large spatula to hand-mix the batter for the remainder of your mixing.
+                        You’ll want to gently fold the mixture with your spatula, scooping up the batter from the outside of the bowl and gently twisting it into the center in a circle-like manner.
+                        You’ll know to stop mixing when you can make a figure-eight out of the dripping batter without the batter breaking.
+                        If you cannot yet make a figure-eight, repeat the process if necessary, and try the figure-eight again.
+                        The best way to describe the perfect consistency is like slow moving lava. It should give, but only slightly, like in slow-motion.
+                    </p>
+                    <p class="h">Step 8</p>
+                    <p class="p">
+                        Once your batter is the correct consistency, scoop it into a large pastry bag fitted with a 1 inch tip.
+                        Pipe silver dollar-sized circles onto prepared baking sheets, keeping about 1.5 inches between each meringue.
+                        Bang baking sheet on counter two times to remove any air bubbles. Sprinkle tops with a little sea salt as a garnish.
+
+                    </p>
+                    <p class="h">Step 9</p>
+                    <p class="p">
+                        Let the macarons air dry for 15 to 30 minutes or until dry to the touch.
+                        Just pop them into the prepared oven for 13 minutes, turning around halfway through, then allow to cool completely before removing from baking sheets.
+                    </p>
+                    <p class="h">Step 10</p>
+                    <p class="p">
+                        While the macarons are cooling, make the filling. Combine all filling ingredients in a bowl and use an electric mixer to beat until fluffy and fully combined, about 2 minutes.
+                    </p>
+                    <p class="h">Step 11</p>
+                    <p class="p">
+                        Scoop mixture into a piping bag fitted with a 1/2 inch tip and set aside until ready to assemble the macarons.
+                    </p>
+                    <p class="h">Step 12</p>
+                    <p class="p">
+                        Once the macarons are completely cool to the touch, pipe the filling onto a macaron and sandwich with another macaron. Repeat with all macarons.
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        $(document).ready(function () {
+            var btn = $('#backToTop');
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() > 300) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+            });
+            btn.on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, '300');
+            });
+        });
+    </script>
+
+    <script type='text/javascript'>
+        $(window).load(function () {
+            $(document).ready(function () {
+                $('li').each(function (i) {
+                    $(this).click(function () {
+                        $(this).toggleClass('crossOut');
+                    });
+                });
+            });
+        });
+    </script>
+
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        ctx.font = 'bold 75px Ariel ';
+        ctx.fillStyle = "#898EBF";
+        ctx.fillText("Belle's Cookies", 20, 75);
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Belle's Cookies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="StyleSheet2.css" />
+    <script src="JavaScript1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <style>
+
+
+        .back-to-top {
+            position: fixed;
+            bottom: -40px;
+            right: 40px;
+            display: block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background: #898EBF;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            opacity: 0;
+            -webkit-transform: scale(0.3);
+            -ms-transform: scale(0.3);
+            transform: scale(0.3);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 9;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+            .back-to-top:focus {
+                color: #fff;
+            }
+
+            .back-to-top.show {
+                bottom: 40px;
+                right: 40px;
+                opacity: 1;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+
+                .back-to-top.show:hover {
+                    color: #fff;
+                    bottom: 30px;
+                    opacity: 1;
+                }
+
+        .arrow {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-size: contain;
+            transform: rotate(-90deg);
+            top: 30%;
+            left: 40%;
+        }
+
+            .arrow:nth-child(2) {
+                top: 42%;
+            }
+
+        @keyframes bounce {
+            0% {
+                opacity: 1;
+                transform: rotate(-90deg) translateX(0px) scale(1);
+            }
+
+            25% {
+                opacity: 0;
+                transform: rotate(-90deg) translateX(10px) scale(0.9);
+            }
+
+            26% {
+                opacity: 0;
+                transform: rotate(-90deg) translateX(-10px) scale(0.9);
+            }
+
+            55% {
+                opacity: 1;
+                transform: rotate(-90deg) translateX(0px) scale(1);
+            }
+        }
+
+        .back-to-top:hover .arrow {
+            animation-name: bounce;
+            animation-duration: 1.4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+            .back-to-top:hover .arrow:nth-child(2) {
+                animation-name: bounce;
+                animation-duration: 1.4s;
+                animation-delay: 0.2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+        @media only screen and (max-width: 575px) {
+            .back-to-top {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+            }
+
+                .back-to-top.show {
+                    bottom: 10px;
+                    right: 10px;
+                }
+
+                    .back-to-top.show:hover {
+                        bottom: 10px;
+                    }
+
+            .arrow {
+                top: 27%;
+                left: 37%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas" width="600" height="100"></canvas>
+
+
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+
+        <div class="dropdown1">
+            <button class="dropbtn1" onclick="nav1()">
+                Cakes
+
+            </button>
+            <div class="dropdown-content1" id="myDropdown1">
+                <a href="Blueberry Cheesecake.html">Bluberry cheesecake</a>
+                <a href="Orange Cake.html">Orange Cake</a>
+                <a href="Chocolate Mousse Cake.html">Chocolate Mousse Cake</a>
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button class="dropbtn2" onclick="nav2()">
+                Cookies
+
+            </button>
+            <div class="dropdown-content2" id="myDropdown2">
+                <a href="Chocolate Chip Cookies.html">Chocolate Chip Cookies</a>
+                <a href="Brownies.html">Brownies</a>
+                <a href="Macarons.html">Macarons</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button class="dropbtn3" onclick="nav3()">
+                Pies
+
+            </button>
+            <div class="dropdown-content3" id="myDropdown3">
+                <a href="Lemon merringue pie.html">Lemon Merringue Pie</a>
+                <a href="Apple pie.html">Apple Pie</a>
+                <a href="Pecan Pie.html">Pecan Pie</a>
+            </div>
+        </div>
+        <a href="AboutUs.html">About</a>
+        <a href="Contactus.html">Contact Us</a>
+    </div>
+
+    <a href="javascript:void(0);" id="backToTop" class="back-to-top">
+        <i class="arrow"></i><i class="arrow"></i>
+    </a>
+
+
+
+
+    <table style="width:1000px; position:relative; left:100px; top:5px">
+        <tr style="width:900px">
+            <td class="h" style="padding:10px; width:400px; height:400px;color:black">
+                <span class="h" style="font-size:40px; color:black">
+                    Welcome to our baking website
+                </span>
+                <br />
+                <span style="color: #898EBF; font-size:30px"> Belle's Cookies</span>
+
+                <br />
+                Belle's Cookies is a baking recipe website.
+                We specialize in delicious cakes, pastries, and other baked goods made with the freshest ingredients.
+                Browse our menu to see all of our mouth-watering offerings.
+
+            </td>
+            <td style="width:500px; padding:100px;position:relative;left:170px; ">
+                <img name="slide" width="240" height="280" onclick="swapImage" style="border-radius:6px 6px" />
+            </td>
+        </tr>
+    </table>
+    <div style="position:relative; left:200px; bottom:80px">
+        <video width="700" height="600" autoplay muted>
+            <source src="vanilla-sponge-cake-how-to-make-sponge-cake-easy-basic-cake-recipe-givefastlink.mp4" type="video/mp4" />
+
+        </video>
+    </div>
+    <audio autoplay>
+        <source src="dndm-my-secret-original-mix-givefastlink.mp3" type="audio/mp3" />
+    </audio>
+
+    <script>
+        $(document).ready(function () {
+            var btn = $('#backToTop');
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() > 300) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+            });
+            btn.on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, '300');
+            });
+        });
+    </script>
+
+
+
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        ctx.font = 'bold 75px Ariel ';
+        ctx.fillStyle = "#898EBF";
+        ctx.fillText("Belle's Cookies",
+            20, 75);
+    </script>
+
+
+
+
+</body>
+</html>
